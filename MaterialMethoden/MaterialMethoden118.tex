@@ -620,3 +620,51 @@ Die Isolation von RNA aus infiziertem und nicht-infiziertem Pflanzenmaterial von
 Die Isolation von RNA aus Uredosporen und Keimschläuchen (siehe \ref{sec:Keimschlauch}) erfolgte analog zu der in \ref{sec:RNA-Pflanze} beschriebenen Methode.    
 \subsection{Isolation von RNA aus Appressorien von \Ppach}
 Zur Isolation von RNA aus Appressorien von \Ppach\ wurden die in\ref{sec:appressorien} beschriebenen PE-Folie behutsam mit Filterpapier trocken getupft und anschließend 600\,$\upmu$l Extraktionslösung darauf gegebenen. Die Extraktionslösung wurde mit einem Gummiwischer (Carl Roth GmbH, Karlsruhe) verteilt, wodurch sich die pilzlichen Strukturen von der Folie lösten und mit einer abgeschnittenen Pipettenspitze in ein 2\,ml Reaktionsgefäß mit einer Mischung aus Quarzsand und Glaskügelchen (Lysing Matrix E, MP Biomedicals GmbH, Eschwege) überführt werden konnten. Die Appressorien wurden 2-mal für 20\,s bei 6500 \acs{mps} im FastPrep$\textsuperscript{\textregistered}$-24 homogenisiert, wobei das Material zwischen den Homogenisierungsschritten auf Eis gekühlt wurde. Das Homogenat wurde für 2\,min bei 4\celcius\ und 16.000\,rpm zentrifugiert. Anschließend wurde der Überstand abgenommen und auf ein Filtersäulchen überführt. Die weitere Vorgehensweise erfolgte analog zu der in \ref{sec:RNA-Pflanze} beschriebenen Methode. 
+%%%%%%%
+%%%%%%%
+%%%%%%%
+
+\section{cDNA-Synthese}
+Die Synthese von \acs{cDNA} aus pflanzlicher und pilzlicher RNA erfolgte mit dem Tetro cDNA Synthese Kit (Bioline GmbH, Luckenwalde). Für die Synthese von cDNA aus RNA von infiziertem und nicht-infiziertem Blattmaterial, sowie aus Sporen und Keimschläuchen von \Ppach\ wurden 5\,\mug\ total~RNA eingesetzt. Für die Synthese von cDNA aus Appressorien-RNA wurden 2,5\,\mug\ total RNA verwendet. Um mögliche Kontaminationen mit genomischer DNA zu vermeiden, wurde vor der reversen Transkription  ein DNAse\,I-Verdau mit PerfeCTa~DNAse\,I (Quanta Bioscience, Gaithersburg, MD, USA) durchgeführt (siehe \Fref{tab:DNAse}).
+%\begin{minipage}[t]{.5\textwidth}
+\captionof{table}[Reaktionsansatz für den Verdau mit DNAse\,I]{Reaktionsansatz für einen DNAse\,I-Verdau}\label{tab:DNAse}
+\begin{tabular}{
+p{.3\textwidth}
+p{.05\textwidth}
+S[table-format=1.0,table-comparator=true,table-space-text-post={***********}]
+}
+\toprule
+Reagenz && \si{Volumen\,(\mul)}\\
+\midrule
+10x-Reationspuffer&&1\mul \\
+PerfeCTa DNAse\,I&&1\,\mul \\
+RNA & bis &5\,\mug \\
+\reinstwasser & auf& 10\,\mul \\
+\bottomrule
+\end{tabular}\\
+\newline
+Der Reaktionsansatz wurde für 30\, min bei 37\celcius\ inkubiert. Anschließend wurde 1\,\mul\ Inaktivierungspuffer zugegeben und die Reaktion durch 10-minütige Inkubation bei 65\celcius\ inaktiviert. 
+%\end{minipage}\\
+
+%%%
+%\newpage
+%\begin{minipage}[t]{.5\textwidth}
+\captionof{table}[Reaktionsansatz für die cDNA-Synthese]{Reaktionsansatz cDNA-Synthese}
+\begin{tabular}{
+p{.3\textwidth}
+p{.05\textwidth}
+S[table-format=1.0,table-comparator=true,table-space-text-post={***********}]
+}
+\toprule
+Reagenz && \si{Volumen\,(\mul)}\\
+\midrule
+10x-Reationspuffer&&1\mul \\
+dNTPS (10mM)&&1\,\mul \\
+Hexamer-Primer(10mM)&&1\,\mul \\
+RNA (aus \ref{tab:DNAse-Verdau} & & 11\mul \\
+RNAse-Inhibitor && 1\,\mul \\
+Reverse Transkriptase& & 1\,\mul \\ 
+\reinstwasser & auf&20\,\mul \\ 
+\bottomrule
+\end{tabular}
+%\end{minipage}
