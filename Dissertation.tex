@@ -1,0 +1,141 @@
+\documentclass[ toc=listof,			%Abbildungs- und Tabellenverzeichnis ins Inhaltsverzeichnis
+ bibtotoc, %Literaturverzeichnis ins Inhaltsverzeichnis
+  listof=entryprefix, %Tab und Fig ins Tabellen und Abbildungsverzeichnis
+  12pt, %Schriftgröße
+  captions=nooneline,
+  tablecaptionabove
+ ] %Tabellenüberschrift/abbildungsunterschrift linksbündig
+  {scrreprt} 								% Dokumentklasse
+%\usepackage[skip=30pt]{caption}
+\usepackage[ngerman]{babel} 									% Neue deutsche Rechtschreibung
+\usepackage[T1]{fontenc} 											% Ausgabezeichen
+\usepackage[utf8]{inputenc} 										% europäische Zeichenkodierung und Umlaute
+\usepackage[left=2.5cm,right=2.5cm,top=1cm,bottom=1cm,includeheadfoot]{geometry}	% Seitenränder, links inkl. 1cm 
+\usepackage{setspace} 
+%Bindekorrektur
+%\renewcommand{\familydefault}{\sfdefault}				% Umstellung auf serifenlose Schrift 
+%\usepackage{mathpazo}
+%\usepackage{helvet}												% Schriftart Helvetica
+%\usepackage{fancyref}
+%\usepackage{tocloft}
+%\usepackage{lmodern}
+%%Pakete allgemein
+\usepackage{chngcntr} 					%		Nummerierung der Tabellen und Abbildungen in normalem Format
+\counterwithout{footnote}{chapter}   % 	Fußnoten fortlaufend 
+\counterwithout{figure}{chapter}      % 	Abbildung ohne Kapitelnummer. 
+\counterwithout{table}{chapter}         % 	Tabellen ohne Kapitelnummer.. 
+\usepackage{palatino}
+\usepackage{blindtext}
+%\usepackage{lmodern}                     %		Schriftart lmodern
+%\renewcommand{\familydefault}{\sfdefault}											% Umstellung auf serifenlose Schrift 
+%\usepackage{mathpazo}
+%\usepackage{helvet}																				% Aktivierung von 1,5-fachem Zeilenabstand
+\setcounter{secnumdepth}{4}															% Nummerierung bis zur 4. Gliederungsebene (Subsubsection)
+\setcounter{tocdepth}{4}
+\newcommand{\chapternumbering}[1]{% 												% Wechsel zwischen römischen und arabischen Ziffern bei Kapitelnummerierung 
+  \setcounter{chapter}{0}% 															%
+   \renewcommand{\thechapter}{\csname #1\endcsname{chapter}}} 						%
+\renewcommand*{\chapterheadstartvskip}{\vspace*{-20pt}}								% Abstand zwischen Kapitelnummer und Seitenrand 
+\usepackage{natbib}																	% Literaturverzeichnis
+\usepackage{booktabs}																% Tabellen
+%\usepackage{longtable,ltcaption}
+															% Tabellen über mehrere Seiten
+\usepackage{tabularx}																	%Tabellen mit automatisch ermittelter Spaltenbreite
+%\usepackage{tabularx}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}} % linksbündig mit Breitenangabe
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}} % zentriert mit Breitenangabe
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}} % rechtsbündig mit Breitenangabe
+\usepackage{longtable,ltcaption}
+\newcommand{\ltab}{\raggedright\arraybackslash} % Tabellenabschnitt linksbündig
+\newcommand{\ctab}{\centering\arraybackslash} % Tabellenabschnitt zentriert
+\newcommand{\rtab}{\raggedleft\arraybackslash} % Tabellenabschnitt rechtsbündig 
+\usepackage{capt-of}																	%Beschriftung Abb. und Tab. ohne Gleitumgebung
+%\usepackage{float}										
+\usepackage{graphicx}																% Abbildungen einfügen
+\usepackage{subfig}																	% Mehrere Abbildungen nebeneinander 
+\usepackage[plain]{fancyref}													% Querverweise im Text, ohne Seitenzahlen			
+\usepackage{mdwlist}																% Kleinere Abstände zwischen einzelenen Items in einer Liste
+\usepackage{siunitx}																% richtige Darstellung von SI-Einheiten
+\sisetup{%
+  mode = math,
+  detect-all,
+  detect-weight,  
+  exponent-product = \cdot,
+  number-unit-separator=\text{\,},
+  output-decimal-marker={\text{,}},
+  math-rm=\sffamily,
+  text-rm=\rmfamily,
+}													% ", " als Dezimaltrennzeichen
+%\sisetup{ 
+  %locale=DE 
+%} 
+\usepackage[printonlyused]{acronym}										% Abkürzungsverzeichnis
+\usepackage{epigraph}																% Zitate am Anfang der Arbeit
+\renewcommand{\epigraphflush}{center}												% Zitat in Seitenmitte
+\renewcommand{\epigraphsize}{\normalsize}											% Zitat in normaler Textgröße
+\usepackage{scrpage2}															% Paket für Kopfzeilen
+\automark{chapter}																	% laufender Kolumnentitel
+\clearscrheadfoot
+\ihead{}
+\chead{}
+\ohead{\headmark}																	% Kapitel im Kopf rechts
+\ifoot{}
+\cfoot[\pagemark]{\pagemark}													% Seitenzahl zentriert
+\ofoot{}
+\setheadsepline{0.5pt}															 	% Dicke der Linie unter Kopfzeile
+\addtokomafont{pageheadfoot}{\upshape}							% Kolumnentitel normal (nicht fett oder kursiv)
+
+%%%%%%%%%%%%%%% Eigene Labels
+
+\newcommand{\water}{H$_2$O}
+\newcommand{\celcius}{$^\circ$C}
+\newcommand{\Gas}{CO$_2$}
+\newcommand{\vewasser}{H$_2$O$_{VE}$}
+\newcommand{\reinstwasser}{H$_2$O$_{reinst}$}
+\newcommand{\BamHI}{\textit{Bam}HI}
+\newcommand{\EcoRI}{\textit{Eco}RI}
+\newcommand{\ClaI}{\textit{Cla}I}
+\newcommand{\KpnI}{\textit{Kpn}I}
+\newcommand{\XbaI}{\textit{Xba}I}
+\newcommand{\XhoI}{\textit{Xho}I}
+\newcommand{\Pp}{\textit{Phakopsora~pachyrhizi}}
+\newcommand{\TaqMan}{TaqMan\textsuperscript{\texttrademark}}
+\newcommand{\Ppach}{\textit{P.~pachyrhizi}}
+\newcommand{\Gmax}{\textit{G.~max}}
+\newcommand{\Nbenthamiana}{\textit{N.~benthamiana}}
+\newcommand{\Atumefaciens}{\textit{A.~tumefaciens}}
+\newcommand{\Ecoli}{\textit{E.~coli}}
+%%%%%%%%%%%%%%%%%%
+\AtBeginDocument{% 
+  \renewcaptionname{ngerman}{\figurename}{Abb.}% scrguide, Abschnitt 10.4 
+                                % (Seite 265f - einschl. Beispiel) 
+  \newcaptionname{ngerman}{\listoflofentryname}{Abb.}% scrguide, 
+                                % Abschnitt 3.20 (Seite 136) 
+  \renewcaptionname{ngerman}{\tablename}{Tab.}% scrguide, Abschnitt 10.4 
+                                % (Seite 265ff) 
+  \newcaptionname{ngerman}{\listoflotentryname}{Tab.}% scrguide, 
+                                % Abschnitt 3.20 (Seite 136) 
+} 
+\setuptoc{toc}{totoc}
+\begin{document} 
+\include{Deckblatt/Deckblatt}					%Deckblatt einbinden
+\include{Leerseite/Leerseite}					%Leerseite einbinden
+%\include{Zitat/Zitat}									%Zitat einbinden	
+%\setcounter{secnumdepth}{4} 
+%\renewcommand\thechapter{\Roman{chapter}} 
+\pagenumbering{roman} 
+\tableofcontents
+\listoffigures 
+\listoftables 
+\include{Abkvz/Abkvz}
+%\renewcommand\thechapter{\Arabic{chapter}} 
+\renewcommand\thechapter{\arabic{chapter}}
+\setcounter{chapter}{0}
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+\onehalfspacing
+\include{Einleitung/Einleitung}
+\include{MaterialMethoden/MaterialMethoden118}
+\bibliographystyle{DissLit}
+\bibliography{Literatur}
+\end{document}
