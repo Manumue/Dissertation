@@ -1,8 +1,8 @@
 \select@language {ngerman}
 \contentsline {chapter}{\nonumberline Inhaltsverzeichnis}{i}
-\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{ii}
-\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{iii}
-\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{iv}
+\contentsline {chapter}{\nonumberline Abbildungsverzeichnis}{iii}
+\contentsline {chapter}{\nonumberline Tabellenverzeichnis}{iv}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{v}
 \contentsline {chapter}{\numberline {1}Einleitung}{1}
 \contentsline {section}{\numberline {1.1}Rostpilze}{1}
 \contentsline {subsection}{\numberline {1.1.1}A}{1}
@@ -24,13 +24,19 @@
 \contentsline {subsubsection}{\numberline {2.3.2.1}Inokulation von \textit {G.\,max} mit \textit {P.\,pachyrhizi}}{12}
 \contentsline {subsubsection}{\numberline {2.3.2.2}\textit {In vitro}-Erzeugung von Keimschl\IeC {\"a}uchen}{12}
 \contentsline {subsubsection}{\numberline {2.3.2.3}\textit {In vitro}-Erzeugung von Appressorien}{12}
-\contentsline {subsection}{\numberline {2.3.3}Bakterienst\IeC {\"a}mme}{12}
+\contentsline {subsection}{\numberline {2.3.3}Bakterienst\IeC {\"a}mme}{13}
 \contentsline {subsubsection}{\numberline {2.3.3.1}Herstellung \acs {SEM}-kompetenter Zellen von \textit {E.~coli}}{13}
 \contentsline {subsubsection}{\numberline {2.3.3.2}Transformation von \textit {E.~coli}}{13}
 \contentsline {subsubsection}{\numberline {2.3.3.3}Herstellung elektro-kompetenter Zellen von \textit {A.~tumefaciens}}{13}
 \contentsline {subsubsection}{\numberline {2.3.3.4}Transformation von \textit {A.~tumefaciens}}{14}
-\contentsline {section}{\numberline {2.4}Ger\IeC {\"a}te}{15}
+\contentsline {section}{\numberline {2.4}Ger\IeC {\"a}te}{14}
 \contentsline {section}{\numberline {2.5}Software und Server}{16}
 \contentsline {section}{\numberline {2.6}Plasmide}{16}
 \contentsline {section}{\numberline {2.7}Molekularbiologische Methoden}{16}
 \contentsline {subsection}{\numberline {2.7.1}RNA-Pr\IeC {\"a}paration}{16}
+\contentsline {section}{\numberline {2.8}Isolierung von Nukleins\IeC {\"a}uren}{16}
+\contentsline {subsection}{\numberline {2.8.1}Isolation von Plasmid DNA}{16}
+\contentsline {subsection}{\numberline {2.8.2}Isolation von RNA aus Pflanzenmaterial}{17}
+\contentsline {subsection}{\numberline {2.8.3}Isolation von RNA aus Uredosporen und Keimschl\IeC {\"a}uchen von \textit {P.~pachyrhizi}}{17}
+\contentsline {subsection}{\numberline {2.8.4}Isolation von RNA aus Appressorien von \textit {P.~pachyrhizi}}{17}
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{19}
